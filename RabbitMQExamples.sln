@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35201.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NativeRabbitApi", "NativeRabbitApi", "{55FFEF77-4526-4CA1-859D-8CA409FF086A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultExchange", "DefaultExchange", "{55FFEF77-4526-4CA1-859D-8CA409FF086A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublisherRabbitApp", "PublisherRabbitApp\PublisherRabbitApp.csproj", "{BFDC3179-6BA3-4DC9-B816-01A840B3E567}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerRabbitApp", "ConsumerRabbitApp\ConsumerRabbitApp.csproj", "{2A4CB1F4-3B1E-4CCB-9226-23EF3854ED44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DirectExchange", "DirectExchange", "{B2844F78-F257-408B-B632-385B98582382}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
