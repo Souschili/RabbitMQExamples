@@ -7,7 +7,7 @@ namespace ConsumerRabbitApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             var factory = new ConnectionFactory { HostName = "localhost" };
             using var client = factory.CreateConnection();
@@ -29,6 +29,10 @@ namespace ConsumerRabbitApp
             {
                 string message = Encoding.UTF8.GetString(e.Body.ToArray());
                 Console.WriteLine($"receive message: {message}");
+
+                // delete message after reading
+                channel.BasicAck(deliveryTag: e.DeliveryTag, multiple: false);
+
             };
 
             //subscribe to queue
@@ -39,6 +43,7 @@ namespace ConsumerRabbitApp
                 );
 
             Console.WriteLine("Subsribed to demo-queue");
+            await Task.Delay(Timeout.Infinite);
         }
     }
 }
