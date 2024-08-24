@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumerRabbitApp", "Consum
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DirectExchange", "DirectExchange", "{B2844F78-F257-408B-B632-385B98582382}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerApp", "ProducerApp\ProducerApp.csproj", "{FCFF1061-7157-45A6-961D-EC176E2DEFF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{2A4CB1F4-3B1E-4CCB-9226-23EF3854ED44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A4CB1F4-3B1E-4CCB-9226-23EF3854ED44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A4CB1F4-3B1E-4CCB-9226-23EF3854ED44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFF1061-7157-45A6-961D-EC176E2DEFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFF1061-7157-45A6-961D-EC176E2DEFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFF1061-7157-45A6-961D-EC176E2DEFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFF1061-7157-45A6-961D-EC176E2DEFF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BFDC3179-6BA3-4DC9-B816-01A840B3E567} = {55FFEF77-4526-4CA1-859D-8CA409FF086A}
 		{2A4CB1F4-3B1E-4CCB-9226-23EF3854ED44} = {55FFEF77-4526-4CA1-859D-8CA409FF086A}
+		{FCFF1061-7157-45A6-961D-EC176E2DEFF3} = {B2844F78-F257-408B-B632-385B98582382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55C9F533-084E-4CB7-B2F8-D9ECD58A3819}
