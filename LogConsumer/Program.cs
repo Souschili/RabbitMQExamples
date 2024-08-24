@@ -26,7 +26,7 @@ namespace InfoCosumer
             channel.QueueBind(
                 queue: queueName,
                 exchange: "demo-direct",
-                routingKey: "Info",
+                routingKey: "Log",
                 arguments: null
                 );
 
@@ -34,7 +34,7 @@ namespace InfoCosumer
 
             consumer.Received += (sender, e) =>
             {
-                //преоразуем массив айтов в сообщение
+                //преоразуем массив байтов в сообщение
                 var message = Encoding.UTF8.GetString(e.Body.ToArray());
                 // вывод полученого сообщения
                 Console.WriteLine($"Received message: {message}");
@@ -46,7 +46,7 @@ namespace InfoCosumer
             // подписка на очередь
             channel.BasicConsume(
                 queue: queueName,
-                autoAck: false,
+                autoAck: false,// не удаляем автоматически ,только после обработки сами
                 consumer: consumer
                 );
 

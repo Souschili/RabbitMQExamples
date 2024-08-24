@@ -21,7 +21,7 @@ namespace ErrorConsumer
             channel.QueueBind(
                 queue:queueName,
                 exchange:"demo-direct",
-                routingKey:"error",
+                routingKey:"Error",
                 arguments:null
                 );
 

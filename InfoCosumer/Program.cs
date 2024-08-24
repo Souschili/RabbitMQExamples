@@ -34,7 +34,7 @@ namespace InfoCosumer
 
             consumer.Received += (sender, e) =>
             {
-                //преоразуем массив айтов в сообщение
+                //преоразуем массив байтов в сообщение
                 var message=Encoding.UTF8.GetString(e.Body.ToArray());
                 // вывод полученого сообщения
                 Console.WriteLine($"Received message: {message}");
