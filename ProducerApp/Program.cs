@@ -12,8 +12,8 @@ namespace ProducerApp
         {
             var ctc = new CancellationTokenSource();
 
-            var task1 = Task.Run(CreateTask(25000, "error", ctc.Token));
-            var task2 = Task.Run(CreateTask(18000, "log", ctc.Token));
+            var task1 = Task.Run(CreateTask(25000, "Error", ctc.Token));
+            var task2 = Task.Run(CreateTask(18000, "Log", ctc.Token));
             var task3 = Task.Run(CreateTask(11000, "Info", ctc.Token));
             Console.WriteLine("Press any key to stop all tasks");
             Console.ReadLine();
